@@ -159,6 +159,7 @@ footer {
         justify-content: center;
         padding-right: 0;
         padding-bottom: 10px;
+    
     }
 
     .header {
@@ -237,7 +238,7 @@ footer {
 
     .image {
         width: 80%;
-        padding-left: 140px;
+        padding-left: 130px;
     }
 
     .image img {

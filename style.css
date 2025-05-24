@@ -108,6 +108,7 @@ button:hover {
         border-radius: 60px;
         margin: 0 auto 10px auto;
         display: block;
+        position: fixed;
     }
 
     p {

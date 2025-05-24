@@ -1,0 +1,147 @@
+body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(241, 237, 233); /* fallback or base color */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Very low visibility */
+    z-index: -1;
+}
+
+
+h5 {
+    margin-top: 160px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+img {
+    width: 200px;
+    border-radius: 100px;
+    margin-right: 10px; 
+    
+}
+
+p {
+    font-size: 20px;
+    font-weight: 700;
+    color: darkslategray;
+}
+
+.para {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 7px;
+
+    span {
+        color: red;
+    }
+}
+
+#para1 {
+    margin-top: 0;
+    font-size: 11px;
+    background-image: url('sam1.jpg');
+    width: fit-content;
+    margin-left: 768px;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 7px;
+}
+
+button {
+    margin-top: 20px;
+    width: 150px;
+    padding: 5px;
+    background-color: rgb(30, 145, 30);
+    color: white;
+    border-color: rgb(223, 213, 213);
+}
+
+button:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: smaller;
+    color: rgb(65, 36, 0);
+    text-shadow: 4px 2px 4px 3px;
+}
+
+
+
+/*----Media Queries----*/
+
+
+@media (max-width: 1440px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h5 {
+        margin-top: 60px;
+        font-size: 16px;
+    }
+
+    img {
+        width: 120px;
+        border-radius: 60px;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .para {
+        font-size: 18px;
+    }
+
+    #para1 {
+        margin: 10px auto;
+        font-size: 10px;
+        padding: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    button {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    button:hover {
+    background-color: black;
+    color: yellow;
+}
+
+.footer {
+    margin-top: 430px;
+    font-size: smaller;
+    color: rgb(49, 28, 2);
+    text-shadow: 2px;
+}
+
+}
